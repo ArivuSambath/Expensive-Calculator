@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .btn {
+      @apply text-[32px] hover:text-cyan-950 hover:bg-white/90 border border-solid border-white outline-none bg-white/75;
+    }
+  }
+
+  
+.body {
+ @apply   font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+ @apply   max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.h1 {
+  @apply  text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+  @apply    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form input, .form select, .form button {
+  @apply  padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+ @apply   background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+  @apply    background-color: #218838;
+}
+
+.expense-table table {
+  @apply  width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.expense-table th, .expense-table td {
+ @apply   padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.expense-table th {
+  @apply  background-color: #f8f8f8;
+}
+
+.total-amount {
+  @apply  text-align: right;
+    font-size: 18px;
+}
+
+.filter {
+  @apply    margin-bottom: 20px;
+    text-align: right;
+}
+
+.filter label {
+  @apply  margin-right: 10px;
+}
+
+.filter select {
+  @apply  padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
